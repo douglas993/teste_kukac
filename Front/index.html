@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Teste Estágio KUKAC</title>
+</head>
+
+<body>
+    <div class="viewport">
+        <form id="formulario">
+            <label class="label">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Insira aqui o nome" required>
+            <label class="label">CEP:</label>
+            <input type="number" name="cep" id="cep" placeholder="Insira aqui o CEP" required>
+            <label class="label">Renda:</label>
+            <input type="number" name="renda" id="renda" placeholder="Insira aqui a Renda" required>
+            <label class="label">Dependentes:</label>
+            <input type="number" name="dependentes" id="dependentes" placeholder="Quantos dependentes?" required>
+            <button type="submit" class="enviar">Enviar</button>
+        </form>
+        <div id="result">
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='../Front/Models/requisicao.js'></script>
+</body>
+
+</html>
