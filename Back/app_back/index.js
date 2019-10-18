@@ -14,6 +14,10 @@ server.use(bodyParser.urlencoded({ extended: true }));
 
 server.use(cors());
 
+server.get("/", function(req, res) {
+    console.log("API Rodando")
+})
+
 server.post("/calculo", function(req, res) {
     const nome = req.body.nome;
     const cep = req.body.cep;
